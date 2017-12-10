@@ -1,5 +1,7 @@
 # @pnpm/pkgid-to-filename
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/pnpm/pkgid-to-filename.svg)](https://greenkeeper.io/)
+
 > Converts a package ID to a valid file name
 
 <!--@shields('npm', 'travis')-->
