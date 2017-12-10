@@ -1,0 +1,58 @@
+{
+  "name": "@pnpm/pkgid-to-filename",
+  "version": "0.0.0",
+  "description": "Converts a package ID to a valid file name",
+  "main": "lib/index.js",
+  "typings": "lib/index.d.ts",
+  "files": [
+    "lib"
+  ],
+  "engines": {
+    "node": ">=4"
+  },
+  "scripts": {
+    "lint": "tslint -c tslint.json --project .",
+    "tsc": "rimraf lib && tsc",
+    "test": "npm run lint && preview && ts-node test && mos t",
+    "md": "mos",
+    "prepublishOnly": "npm run tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pnpm/pkgid-to-filename.git"
+  },
+  "keywords": [
+    "pnpm",
+    "integrity",
+    "package",
+    "store"
+  ],
+  "author": "Zoltan Kochan <z@kochan.io> (https://www.kochan.io/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pnpm/pkgid-to-filename/issues"
+  },
+  "homepage": "https://github.com/pnpm/pkgid-to-filename#readme",
+  "dependencies": {
+    "normalize-path": "^2.1.1"
+  },
+  "devDependencies": {
+    "@types/tape": "^4.2.31",
+    "mos": "^2.0.0-alpha.3",
+    "mos-plugin-readme": "^1.0.4",
+    "package-preview": "^1.0.1",
+    "rimraf": "^2.6.2",
+    "tape": "^4.8.0",
+    "ts-node": "^3.3.0",
+    "tslint": "^5.8.0",
+    "typescript": "^2.6.1"
+  },
+  "mos": {
+    "plugins": [
+      "readme"
+    ],
+    "installation": {
+      "useShortAlias": true
+    }
+  }
+}
