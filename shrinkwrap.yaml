@@ -1,6 +1,8 @@
 dependencies:
+  '@pnpm/pkgid-to-filename': 'link:../__package_previews__/pkgid-to-filename/@pnpm/pkgid-to-filename'
   normalize-path: 3.0.0
 devDependencies:
+  '@types/node': 10.9.4
   '@types/tape': 4.2.32
   mos: 2.0.0-alpha.3
   mos-plugin-readme: 1.0.4
@@ -55,6 +57,10 @@ packages:
     dev: true
     resolution:
       integrity: sha512-8TqvB0ReZWwtcd3LXq3YSrBoLyXFgBX/sBZfGye9+YS8zH7/g+i6QRIuiDmwBoTzcQ/pk89nZYTYU4c5akKkzw==
+  /@types/node/10.9.4:
+    dev: true
+    resolution:
+      integrity: sha512-fCHV45gS+m3hH17zgkgADUSi2RR1Vht6wOZ0jyHP8rjiQra9f+mIcgwPQHllmDocYOstIEbKlxbFDYlgrTPYqw==
   /@types/tape/4.2.32:
     dependencies:
       '@types/node': 10.5.4
@@ -3017,9 +3023,10 @@ packages:
     resolution:
       integrity: sha1-5a2ryKz0CPY4X8dklWhMiOavaJo=
 registry: 'https://registry.npmjs.org/'
-shrinkwrapMinorVersion: 8
+shrinkwrapMinorVersion: 9
 shrinkwrapVersion: 3
 specifiers:
+  '@types/node': ^10.9.4
   '@types/tape': ^4.2.31
   mos: ^2.0.0-alpha.3
   mos-plugin-readme: ^1.0.4
