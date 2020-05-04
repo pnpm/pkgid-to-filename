@@ -11,7 +11,7 @@ Most package IDs are already unique and valid filenames, so only the package IDs
 ## Installation
 
 ```sh
-npm i -S @pnpm/pkgid-to-filename
+<pnpm|npm|yarn> add @pnpm/pkgid-to-filename
 ```
 
 ## Usage
