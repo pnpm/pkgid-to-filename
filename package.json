@@ -1,6 +1,6 @@
 {
   "name": "@pnpm/pkgid-to-filename",
-  "version": "2.0.0",
+  "version": "3.0.0-0",
   "description": "Converts a package ID to a valid file name",
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
