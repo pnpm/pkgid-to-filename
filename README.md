@@ -6,8 +6,6 @@
 [![npm version](https://img.shields.io/npm/v/@pnpm/pkgid-to-filename.svg)](https://www.npmjs.com/package/@pnpm/pkgid-to-filename) [![Build Status](https://img.shields.io/travis/pnpm/pkgid-to-filename/master.svg)](https://travis-ci.org/pnpm/pkgid-to-filename)
 <!--/@-->
 
-Most package IDs are already unique and valid filenames, so only the package IDs of local dependencies are converted.
-
 ## Installation
 
 ```sh
@@ -28,7 +26,7 @@ No changes are done for package ID of non-local package.
 
 ```js
 pkgIdToFilename('registry.npmjs.org/foo/1.0.0')
-//> registry.npmjs.org/foo/1.0.0
+//> registry.npmjs.org/foo@1.0.0
 ```
 
 ## License
