@@ -13,8 +13,7 @@
   "scripts": {
     "lint": "tslint -c tslint.json --project .",
     "tsc": "rimraf lib && tsc",
-    "test": "npm run lint && preview && ts-node test && mos t",
-    "md": "mos",
+    "test": "npm run lint && preview && ts-node test",
     "prepublishOnly": "npm run tsc"
   },
   "repository": {
@@ -37,23 +36,13 @@
     "normalize-path": "^3.0.0"
   },
   "devDependencies": {
-    "@types/node": "^10.9.4",
+    "@types/node": "^13.13.4",
     "@types/tape": "^4.2.31",
-    "mos": "^2.0.0-alpha.3",
-    "mos-plugin-readme": "^1.0.4",
-    "package-preview": "^2.0.0",
+    "package-preview": "^3.0.0",
     "rimraf": "^3.0.0",
     "tape": "^5.0.0",
-    "ts-node": "^7.0.0",
-    "tslint": "^6.0.0",
+    "ts-node": "^8.10.1",
+    "tslint": "^6.1.2",
     "typescript": "^3.0.0"
-  },
-  "mos": {
-    "plugins": [
-      "readme"
-    ],
-    "installation": {
-      "useShortAlias": true
-    }
   }
 }
