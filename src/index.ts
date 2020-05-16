@@ -7,6 +7,7 @@ export default function pkgIdToFilename (pkgId: string, prefix: string) {
     return `${pkgId.substr(0, index)}@${pkgId.substr(index + 1)}`
   }
 
-  const absolutePath = path.join(prefix, pkgId.slice(5))
-  return `local/${encodeURIComponent(normalize(absolutePath))}`
+  const absolutePath = normalize(path.join(prefix, pkgId.slice(5)))
+  const lastSlash = absolutePath.lastIndexOf('/')
+  return `local/${encodeURIComponent(absolutePath.substr(0, lastSlash + 1))}${absolutePath.substr(lastSlash + 1)}`
 }
