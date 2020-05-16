@@ -1,49 +1,49 @@
 {
-  "name": "@pnpm/pkgid-to-filename",
-  "version": "3.0.0-1",
-  "description": "Converts a package ID to a valid file name",
-  "main": "lib/index.js",
-  "typings": "lib/index.d.ts",
-  "files": [
-    "lib",
-    "!*.map"
-  ],
-  "engines": {
-    "node": ">=10.13"
-  },
-  "scripts": {
-    "lint": "tslint -c tslint.json --project .",
-    "tsc": "rimraf lib && tsc",
-    "test": "npm run lint && preview && ts-node test",
-    "prepublishOnly": "npm run tsc"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/pnpm/pkgid-to-filename.git"
-  },
-  "keywords": [
-    "pnpm",
-    "integrity",
-    "package",
-    "store"
-  ],
-  "author": "Zoltan Kochan <z@kochan.io> (https://www.kochan.io/)",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/pnpm/pkgid-to-filename/issues"
-  },
-  "homepage": "https://github.com/pnpm/pkgid-to-filename#readme",
-  "dependencies": {
-    "normalize-path": "^3.0.0"
-  },
-  "devDependencies": {
-    "@types/node": "^13.13.4",
-    "@types/tape": "^4.2.31",
-    "package-preview": "^3.0.0",
-    "rimraf": "^3.0.0",
-    "tape": "^5.0.0",
-    "ts-node": "^8.10.1",
-    "tslint": "^6.1.2",
-    "typescript": "^3.0.0"
-  }
+	"name": "@pnpm/pkgid-to-filename",
+	"version": "3.0.0-2",
+	"description": "Converts a package ID to a valid file name",
+	"main": "lib/index.js",
+	"typings": "lib/index.d.ts",
+	"files": [
+		"lib",
+		"!*.map"
+	],
+	"engines": {
+		"node": ">=10.13"
+	},
+	"scripts": {
+		"lint": "tslint -c tslint.json --project .",
+		"tsc": "rimraf lib && tsc",
+		"test": "npm run lint && preview && ts-node test",
+		"prepublishOnly": "npm run tsc"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/pnpm/pkgid-to-filename.git"
+	},
+	"keywords": [
+		"pnpm",
+		"integrity",
+		"package",
+		"store"
+	],
+	"author": "Zoltan Kochan <z@kochan.io> (https://www.kochan.io/)",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/pnpm/pkgid-to-filename/issues"
+	},
+	"homepage": "https://github.com/pnpm/pkgid-to-filename#readme",
+	"dependencies": {
+		"normalize-path": "^3.0.0"
+	},
+	"devDependencies": {
+		"@types/node": "^13.13.4",
+		"@types/tape": "^4.2.31",
+		"package-preview": "^3.0.0",
+		"rimraf": "^3.0.0",
+		"tape": "^5.0.0",
+		"ts-node": "^8.10.1",
+		"tslint": "^6.1.2",
+		"typescript": "^3.0.0"
+	}
 }
